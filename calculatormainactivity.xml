@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Display Screen -->
+    <TextView
+        android:id="@+id/TxtView1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="calculator"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="10px"/>
+    <EditText
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:textSize="24sp"
+        android:gravity="end"
+        android:inputType="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="@null"
+        android:layout_gravity="end" />
+
+    <!-- Grid Layout for Buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/BtnOFF"
+            style="@style/Theme.First"
+            android:text="OFF" />
+        <!-- Row 1: Buttons 7, 8, 9, and Divide (/) -->
+        <Button
+            android:id="@+id/Btn7"
+            style="@style/Theme.First"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/Btn8"
+            style="@style/Theme.First"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/Btn9"
+            style="@style/Theme.First"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/BtnDivide"
+            style="@style/Theme.First"
+            android:text="/" />
+
+        <!-- Row 2: Buttons 4, 5, 6, and Multiply (*) -->
+        <Button
+            android:id="@+id/Btn4"
+            style="@style/Theme.First"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/Btn5"
+            style="@style/Theme.First"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/Btn6"
+            style="@style/Theme.First"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/BtnMultiply"
+            style="@style/Theme.First"
+            android:text="*" />
+
+        <!-- Row 3: Buttons 1, 2, 3, and Subtract (-) -->
+        <Button
+            android:id="@+id/Btn1"
+            style="@style/Theme.First"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/Btn2"
+            style="@style/Theme.First"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/Btn3"
+            style="@style/Theme.First"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/BtnSub"
+            style="@style/Theme.First"
+            android:text="-" />
+
+        <!-- Row 4: Buttons 0, Clear (C), Equals (=), and Add (+) -->
+        <Button
+            style="@style/Theme.First"
+            android:layout_columnSpan="1"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/BtnC"
+            style="@style/Theme.First"
+            android:layout_gravity="fill_horizontal"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/BtnEquals"
+            style="@style/Theme.First"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/BtnAdd"
+            style="@style/Theme.First"
+            android:text="+" />
+    </GridLayout>
+</LinearLayout>
